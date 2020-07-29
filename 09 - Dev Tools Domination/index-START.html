@@ -17,30 +17,53 @@
       p.style.fontSize = '50px';
     }
 
-    // Regular
+    //
+    console.log('hello')
 
     // Interpolated
+    console.log('Hello I am a %s string!','emojiii')
+    //now just use backticks
 
     // Styled
+    console.log('%c I am text', 'font-size:30px; background:red')
 
     // warning!
-
+    console.warn('OHNOO')
     // Error :|
-
+    console.error('error')
     // Info
+    console.info("cocobutter")
 
     // Testing
+    const p = document.querySelector('p')
+    console.assert(1===2, 'that is WRONG')
 
     // clearing
+    console.clear()
 
     // Viewing DOM Elements
+    console.log(p)
+    console.dir(p) //can see the class list
 
     // Grouping together
-
+    dogs.forEach(dog =>{
+      console.group(`${dog.name}`)
+      console.log( `This is ${dog.name}`)
+      console.log(`${dog.name} is ${dog.age} years old`)
+      console.groupEnd(`${dog.name}`)
+    })
+    // or do group collapsed. SO COOL
     // counting
-
+    console.count('wes')
+    console.count('wes')
     // timing
+    console.time('fetching data')
+    // put a fetch in here
+    console.timeEnd('fetching data')
 
+
+    //table
+    console.table(dogs)
   </script>
 </body>
 </html>
